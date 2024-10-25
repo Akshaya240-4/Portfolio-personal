@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Akshaya VG</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Akshaya VG</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/akshaya-vg-b56702249'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Akshaya240-4'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p><h3>B.Tech<br />Artificial Intelligence<br>&<br>Data Science</h3></p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>CGPA</h3>
+              <p><b><h3>8.21*</h3></b></p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              A final-year B.Tech student specializing in Artificial Intelligence and Data Science. I possess a robust foundation in Java, SQL, and Database Management Systems (DBMS), coupled with expertise in Power BI and advanced statistical analysis. With hands-on experience in diverse projects encompassing Machine Learning (ML) and Deep Learning (DL), I bring a dynamic skill set that is well-suited for tackling complex challenges. My excellent communication abilities and adaptability enable me to thrive in any professional environment, ensuring a meaningful contribution to any team or organization.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--==================== Qualifications ==================-->
+
+    <section
+    class="qualification__section service__section"
+    id="qualification"
+  >
+    <h2 class="section__title">Education</h2>
+    <span class="section__subtitle">My personal journey</span>
+
+
+      <div class="qualification__sections">
+        <!--====== Qualification Content 1 ======-->
+        <div
+          class="qualification__content qualifiation__active services__content"
+          data-content
+          id="education"
+        >
+          <!--====== Qualification 1 ======-->
+          <div class="qualification__data">
+            <div>
+              <h3 class="qualification__title"><b>AISSE</b></h3>
+              <span class="qualification__subtitle"
+                >TV sekharan memorial matriculation higher secondary school. <br /><strong>Score:86%</strong></span
+              >
+              <div class="qualification__calender">
+                <i class="uil uil-calendar-alt"></i>
+                - 2019
+              </div>
+              <span
+                class="button button--flex button--small button--link services__button"
+              >
+                View More
+                <i class="uil uil-arrow-right button__icon"></i>
+              </span>
+              <div class="services__modal">
+                <div class="services__modal-content">
+                  <h4 class="services__modal-title">
+                    Class 10th Summary :
+                  </h4>
+                  <i class="uil uil-times services__modal-close"></i>
+                  <ul class="services__modal-services grid">
+                    <li class="services__modal-service">
+                      <i
+                        class="uil uil-check-circle services__moda-icon"
+                      ></i>
+                      <p>
+                        Subjects studied: Science, Maths, English,
+                        Social Science,Tamil,INFO Technology.
+                      </p>
+                    </li>
+                    <li class="services__modal-service">
+                      <i
+                        class="uil uil-check-circle services__moda-icon"
+                      ></i>
+                      <p>Captain of the house, actively involved in organizing and leading various house activities.</p>
+                    </li>
+                    <li class="services__modal-service">
+                      <i
+                        class="uil uil-check-circle services__moda-icon"
+                      ></i>
+                      <p>Successfully represented the <strong>TAMIL NADU</strong> team in the Sub-Junior category at the 2019 National-Level Throwball Championship held in Chhattisgarh, demonstrating teamwork, competitive spirit, and athletic excellence.</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <span class="qualification__rounder"></span>
+              <span class="qualification__line"></span>
+            </div>
+          </div>
+
+          <!--====== Qualification 2 ======-->
+          <div class="qualification__data">
+            <div></div>
+
+            <div>
+              <span class="qualification__rounder"></span>
+              <span class="qualification__line"></span>
+            </div>
+            <div>
+              <h3 class="qualification__title"><b>HSC</b></h3>
+              <span class="qualification__subtitle"
+                >Everwin vidhyasharam<br /><strong>Score:89%</strong></span
+              >
+              <div class="qualification__calender">
+                <i class="uil uil-calendar-alt"></i>
+                - 2021
+              </div>
+              <span
+                class="button button--flex button--small button--link services__button"
+              >
+                View More
+                <i class="uil uil-arrow-right button__icon"></i>
+              </span>
+              <div class="services__modal">
+                <div class="services__modal-content">
+                  <h4 class="services__modal-title">
+                    Class 12th Summary :
+                  </h4>
+                  <i class="uil uil-times services__modal-close"></i>
+                  <ul class="services__modal-services grid">
+                    <li class="services__modal-service">
+                      <i
+                        class="uil uil-check-circle services__moda-icon"
+                      ></i>
+                      <p>
+                        Subjects studied: Physics, Chemistry, Maths,
+                        English, Computer Science,Physical Education.
+                      </p>
+                    </li>
+                    <li class="services__modal-service">
+                      <i
+                        class="uil uil-check-circle services__moda-icon"
+                      ></i>
+                      <p>Participated in an inter-school quiz competition, showcasing knowledge and quick thinking</p>
+                    </li>
+                    <li class="services__modal-service">
+                      <i
+                        class="uil uil-check-circle services__moda-icon"
+                      ></i>
+                      <p>Demonstrated leadership as the captain of the <strong>TAMIL NADU </strong>team in the Sub-Senior category at the 2020 National-Level Throwball Championship held in New Delhi.</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--====== Qualification 3 ======-->
+          <div class="qualification__data">
+            <div>
+              <h3 class="qualification__title">College</h3>
+              <span class="qualification__subtitle"
+                >Dr.N.G.P Institute Of Technology,Coimbatore<br><strong>CGPA:8.20*</strong> </span
+              >
+              <div class="qualification__calender">
+                <i class="uil uil-calendar-alt"></i>
+                2021 - 2025
+                
+              </div>
+              <span
+                class="button button--flex button--small button--link services__button"
+              >
+                View More
+                <i class="uil uil-arrow-right button__icon"></i>
+              </span>
+              <div class="services__modal">
+                <div class="services__modal-content">
+                  <h4 class="services__modal-title">College Summary :</h4>
+                  <i class="uil uil-times services__modal-close"></i>
+                  <ul class="services__modal-services grid">
+                    <li class="services__modal-service">
+                      <i
+                        class="uil uil-check-circle services__modal-icon"
+                      ></i>
+                      <p>
+                        Studying core subjects of IT including DSA, Embedded
+                        systems, Design analysis and algorithm, Operating
+                        systems, and Computer architecture .
+                      </p>
+                    </li>
+                    <li class="services__modal-service">
+                      <i
+                        class="uil uil-check-circle services__modal-icon"
+                      ></i>
+                      <p>Scored an aggregate of 7.20 CGPA till now.</p>
+                    </li>
+                    <li class="services__modal-service">
+                      <i
+                        class="uil uil-check-circle services__modal-icon"
+                      ></i>
+                      <p>
+                        Student member in rotract club.
+                      </p>
+                    </li>
+                    <li class="services__modal-service">
+                      <i
+                        class="uil uil-check-circle services__modal-icon"
+                      ></i>
+                      <p>
+                        student member in uyir club.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <span class="qualification__rounder"></span>
+              <!--<span class="qualification__line"></span>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">SKILLS</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JAVA</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MYSQL</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>DBMS</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">TOOLS</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>FIGMA</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CANVA</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>POWER BI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>WIX</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Weather forecast</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Akshaya240-4/Forecasting-weather'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Spotify-clone</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    <br>
+    <br>
+ <!--===================== Contact Me =====================-->
+ <section class="contact section" id="contact">
+  <h2 class="section__title">Contact Me</h2>
+  <span class="section__subtitle">Get in touch</span>
+
+  <div class="contact__container container grid">
+    <div>
+      <div class="contact__information">
+        <i class="uil uil-calling contact__icon"></i>
+        <div>
+          <h3 class="contact__title">Contact Me</h3>
+          <span class="contact__subtitle"><a href="tel:9345329367"></a></span>
+        </div>
+      </div>
+
+      <div class="contact__information">
+        <i class="uil uil-envelope-minus contact__icon"></i>
+        <div>
+          <h3 class="contact__title">Email</h3>
+          <span class="contact__subtitle">akshayapriya2404@gmail.com</span>
+        </div>
+      </div>
+
+      <div class="contact__information">
+        <i class="uil uil-map-marker contact__icon"></i>
+        <div>
+          <h3 class="contact__title">Location</h3>
+          <span class="contact__subtitle">Coimbatore, Tamil Nadu, India</span>
+        </div>
+      </div>
+    </div>
+
+    <form id="contact-form" class="contact__form grid">
+      <div class="contact__inputs grid">
+        <div class="contact__content">
+          <label for="name" class="content__label">Name</label>
+          <input type="text" name="name" id="name" class="contact__input" required />
+        </div>
+
+        <div class="contact__content">
+          <label for="email" class="content__label">Email</label>
+          <input type="email" name="email" id="email" class="contact__input" required />
+        </div>
+      </div>
+
+      <div class="contact__content">
+        <label for="message" class="content__label">Message</label>
+        <textarea name="message" id="message" cols="0" rows="7" class="contact__input" required></textarea>
+      </div>
+
+      <div>
+        <button type="submit" class="button button--flex">
+          Send Message
+          <i class="uil uil-message button__icon"></i>
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  // Initialize EmailJS with your user ID
+  (function() {
+    emailjs.init("1qL0JvQERduj3TZEa");
+
+  })();
+
+  // Handling form submission
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Send email using EmailJS
+    emailjs.sendForm("service_fm0smzs", "template_rqrch4f", this)
+      .then(function() {
+        alert("Message sent successfully!");
+      }, function(error) {
+        console.error("Error:", error);
+        alert("There was an error sending the message.");
+      });
+  });
+</script>
+<br>
+
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <br>
+      <p>Copyright &#169; 2024 Akshaya VG. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
